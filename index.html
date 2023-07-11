@@ -14,20 +14,23 @@
         <div class="joke-box">
             <header>Random Jokes generator</header>
             <div class="box-body">
-                <div class="instruction-box">
+                <div class="instruction-box" id="instruction">
                     <h1>Instruction</h1>
                     <div class="instruction-text">
                         <p><span style="color: yellow;">1)</span>Get jokes by pressing the button or "j"</p>
                         <p><span style="color: yellow">2)</span>Get answer by pressing the button or "c"</p>
                     </div>
                 </div>
-                <div class="jokes-container" style="display: none;">
-                    <p>Joke -  <span style="color: red; line-height: 30px;">Why did the functional programmer get thrown out of school?</span></p>
-                    <p>Punchline - <span style="color: yellow; line-height: 30px;">Because he refused to take classes.</span></p>
+                <div class="jokes-container" id="jokesContainer" style="display: none;">
+                    <p>Joke -  <span style="color: red; line-height: 30px;" id="main-text">Loading...</span></p>
+                    <p>Punchline - <span style="color: yellow; line-height: 30px;" id="answer-text">Loading...</span></p>
                 </div>
             </div>
         </div>
-        <button id="generate">Tell me a joke</button>
+        <div class="buttons">
+            <button id="generate">Tell me a joke</button>
+            <button id="show">Get punchline</button>
+        </div>
     </div>
 </body>
 <script src="app.js"></script>

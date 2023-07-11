@@ -88,7 +88,12 @@ p{
     row-gap: 35px;
 }
 
-#generate{
+.buttons{
+    position: relative;
+    display: flex;
+}
+
+button{
     width: 227px;
     height: 51px;
     color: #000;
@@ -101,6 +106,9 @@ p{
     background: #6FD03F;
 }
 
+#generate{
+    position: absolute;
+}
 @media screen and (max-width: 542px) {
   .joke-box {
     width: 100vw;
